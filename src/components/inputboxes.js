@@ -3,11 +3,11 @@ import React from 'react'
 const Inputboxes = (props) => {
 
     const handleNumOne = event => {
-        props.SetNumOneProp(event.target.value)
+        props.SetNumOne(event.target.value)
     }
 
     const handleNumTwo = event => {
-        props.SetNumTwoProp(event.target.value)
+        props.SetNumTwo(event.target.value)
     }
 
     return (
