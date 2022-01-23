@@ -9,20 +9,14 @@ const Mainpage = () => {
     const [answer, setAnswer] = useState('')
     const [error, setError] = useState('')
         
-   const isValidCalc = () => {
-        // eslint-disable-next-line no-unused-expressions
-        !Number.isNaN(Number(numOne)) &&
-        !Number.isNaN(Number(numTwo)) &&
-        numOne !== "" && numTwo !== "";
-      }
 
     const calculate = () => {
-        if(!isValidCalc()){
-            setAnswer('')
-            return setError('Provide valid numbers')
+        if(!numOne && !numTwo){
+           // setAnswer('')
+            return setError('Invalid input, try again')
         }
-        setError('')
-        setAnswer('')
+        //setError('')
+        //setAnswer('')
 
         switch (operation) {
            case '+':
@@ -57,6 +51,8 @@ const Mainpage = () => {
                 <button type="button" onClick={calculate}> =</button>
 
                 <input type="text" value={answer}/>
+
+                <div>{error}</div>
            
            
 </div>
