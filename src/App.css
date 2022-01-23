@@ -3,7 +3,7 @@
 }
 
 .Calc-header {
-  background-color: #4a8c9c;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,14 +24,27 @@
   text-align: right;
 }
 
-.Inputs [type=text]{
-  border: 3px solid rgb(173, 226, 154);
+.Inputs [name=number]{
+  border: 3px solid rgb(148, 192, 133);
   border-radius: 4px;
   margin: 5px;
   width: 175px;
-  font-family:'Times New Roman';
+  font-family: monospace;
+  color:rgb(236, 233, 58);
+  background-color: rgb(123, 97, 147);
+  font-weight: bold;
 }
 
-.Inputs[type=text name=answer]{
-  
+.Inputs [name=answer]{
+  width: 45px;
+  margin: 5px;
+  border: 3px solid rgb(45, 217, 217);
+  border-radius: 4px;
+  background-color: rgb(139, 175, 104);
+  color:azure;
+  font-weight: bold;
+  font-family: monospace;
 }
+
+
+

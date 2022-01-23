@@ -43,7 +43,7 @@ const Mainpage = () => {
         <Title />
 
             <div className="Inputs">
-                <input name="numOne" value={numOne} onChange={(event) => setNumOne(event.target.value)} />
+                <input name="number" value={numOne} onChange={(event) => setNumOne(event.target.value)} />
 
                 <select value={operation} onChange={(event) => setOperation(event.target.value)}>
                     <option value="+"> + </option>
@@ -52,7 +52,7 @@ const Mainpage = () => {
                     <option value="/"> / </option>
                 </select>
 
-                <input name="numTwo" value={numTwo} onChange={(event) => setNumTwo(event.target.value)} />
+                <input name="number" value={numTwo} onChange={(event) => setNumTwo(event.target.value)} />
 
                 <button type="button" onClick={calculate}> =</button>
 
