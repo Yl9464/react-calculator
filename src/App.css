@@ -46,5 +46,22 @@
   font-family: monospace;
 }
 
+.Ursala{
+  text-align: center;
+  padding: 5px;
+  font-family: cursive;
+  font-weight: bold;
+  color: aquamarine;
+
+}
+
+.Error{
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 5px;
+  font-size: medium;
+}
+
 
 

@@ -58,7 +58,9 @@ const Mainpage = () => {
 
                 <input name="answer" value={answer} />
 </div>
-        <div calssName="error">{error}</div>
+        <div className="Error">{error}</div>
+
+            <div className="Ursala"> <u>Thanks Ursala, you're the best!</u></div>
 </div> 
            );
 };
